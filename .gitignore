@@ -91,3 +91,4 @@ ENV/
 .ropeproject
 
 .DS_store
+.env

@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+from decouple import configparser
+SECRET_KEY = config("SECRET_KEY")
 
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 
@@ -23,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-hve&av$(hl+)*9r8x73ovrovc9ctu@upt!f&qd=4(rtz6omkav'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
